@@ -202,8 +202,11 @@ export default function Home() {
                   Video and GIF compression features are disabled in the web version due to browser memory limits. 
                 </p>
                 <a 
-                   href="/Flatyfoos-Desktop-Setup.zip" 
-                   download 
+                   href="#" 
+                   onClick={(e) => {
+                       e.preventDefault();
+                       alert("Silakan host installer Desktop (Flatyfoos-Desktop-Setup.zip) Anda di Google Drive atau MediaFire, lalu ganti URL link ini di dalam file src/app/page.tsx");
+                   }}
                    className="flex items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg font-medium transition-colors shadow-lg"
                 >
                    Download Flatyfoos Desktop Application
