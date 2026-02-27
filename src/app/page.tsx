@@ -198,10 +198,16 @@ export default function Home() {
              <div className="absolute inset-0 z-10 bg-gray-900/80 backdrop-blur-sm rounded-lg border border-gray-700 flex flex-col items-center justify-center p-6 text-center">
                 <Film className="h-12 w-12 text-blue-400 mb-3" />
                 <h2 className="text-xl font-bold text-white mb-2">Desktop Version Only</h2>
-                <p className="text-gray-300 max-w-lg mb-4">
+                <p className="text-gray-300 max-w-lg mb-6">
                   Video and GIF compression features are disabled in the web version due to browser memory limits. 
-                  <br/>Please download the <strong className="text-blue-400">Flatyfoos Desktop Application</strong> to compress heavy videos without limits!
                 </p>
+                <a 
+                   href="/Flatyfoos-Desktop-Setup.zip" 
+                   download 
+                   className="flex items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg font-medium transition-colors shadow-lg"
+                >
+                   Download Flatyfoos Desktop Application
+                </a>
              </div>
           )}
           
